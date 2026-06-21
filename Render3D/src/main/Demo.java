@@ -15,6 +15,9 @@ import render3d.Object3DFactory;
 import render3d.ObjectColorModel;
 import render3d.Scene;
 
+/**
+ * Demonstration of render3d
+ */
 @SuppressWarnings("serial")
 public class Demo extends JPanel {
 
