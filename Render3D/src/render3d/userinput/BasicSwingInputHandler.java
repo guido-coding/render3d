@@ -40,7 +40,7 @@ public class BasicSwingInputHandler extends AbstractInputHandler implements Mous
 	 * @return
 	 */
 	public static AbstractInputHandler createBasicSwingInputHandler(JFrame component, CameraMovement camMovement) {
-		return BasicSwingInputHandler.createBasicSwingInputHandler(component, camMovement, (_,_,_) -> true);
+		return BasicSwingInputHandler.createBasicSwingInputHandler(component, camMovement, (a,b,c) -> true);
 	}
 	
 	
