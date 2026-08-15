@@ -60,6 +60,9 @@ class Renderer2 extends Renderer {
 			})
 			.sequential() //draw sequentially to ensure correct drawing sequence
 			.forEach(task -> {
+				if (Thread.interrupted()) {
+					throw new IllegalStateException("Rendering interupted");
+				}
 				if (task.fillPolygon()) {
 					g.setColor(task.backgroundColor());
 					g.fillPolygon(task.polygon());								
